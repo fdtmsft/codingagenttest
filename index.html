@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .hello-container {
+            text-align: center;
+            animation: fadeIn 1.5s ease-in;
+        }
+        
+        h1 {
+            font-size: 6rem;
+            color: #ffffff;
+            text-shadow: 
+                3px 3px 6px rgba(0, 0, 0, 0.3),
+                0 0 20px rgba(255, 255, 255, 0.5);
+            margin: 0;
+            animation: bounce 2s infinite;
+        }
+        
+        .emoji {
+            font-size: 4rem;
+            display: inline-block;
+            animation: wave 1.5s ease-in-out infinite;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        
+        @keyframes wave {
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(20deg);
+            }
+            75% {
+                transform: rotate(-20deg);
+            }
+        }
+        
+        .subtitle {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="hello-container">
+        <h1>Hello! <span class="emoji">👋</span></h1>
+        <p class="subtitle">Welcome to our colorful website!</p>
+    </div>
+</body>
+</html>
