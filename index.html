@@ -26,11 +26,29 @@
             font-size: 3em;
             margin: 0;
         }
+        .demo-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        .demo-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
     </style>
 </head>
 <body>
     <div class="hello-container">
         <h1>Hello!</h1>
+        <a href="demo.html" class="demo-link">View Colorful Demo 🎨</a>
     </div>
 </body>
 </html>
